@@ -12,11 +12,6 @@ pipeline{
                 sh 'mvn package'
             }
         }
-        stage('Create Dockerimage'){
-            steps{
-                sh 'docker build -t thetips4you/springboot:latest .'
-            }
-        }
         
     }
-}
+
